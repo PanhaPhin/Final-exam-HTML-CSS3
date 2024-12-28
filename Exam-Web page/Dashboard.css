@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: #e91e63;
+    color: white;
+}
+.sidebar a:hover {
+    background-color: #ddd;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    display: flex;
+    align-items: center;
+}
+.card-header i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.card-footer {
+    margin-top: 20px;
+    color: #888;
+}
+.tasks button {
+    margin-right: 10px;
+}
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+.tasks ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tasks ul li input {
+    margin-right: 10px;
+}
+.tasks ul li button {
+    margin-left: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}

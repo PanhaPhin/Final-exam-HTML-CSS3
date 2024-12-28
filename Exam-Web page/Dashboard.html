@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Dashboard.css">
+
+  
+    
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="sidebar">
+        <div class="p-4 text-center text-xl font-bold">Company</div>
+        <nav class="mt-10">
+            <a href="#" class="active">
+                <i class="fas fa-tachometer-alt mr-3"></i>
+                Dashboard
+            </a>
+            <a href="User Profile.html">
+                <i class="fas fa-user mr-3"></i>
+                User Profile
+            </a>
+            <a href="Map.html">
+                <i class="fas fa-map-marker-alt mr-3"></i>
+                Maps
+            </a>
+            <a href="Notifications.html">
+                <i class="fas fa-bell mr-3"></i>
+                Notifications
+            </a>
+            <a href="Support.html">
+                <i class="fas fa-life-ring mr-3"></i>
+                Support
+            </a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1 class="text-2xl font-bold mb-6">Dashboard</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-green-500 p-3 rounded-full text-white">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Used Space</p>
+                        <p class="text-2xl font-bold">49/50 GB</p>
+                    </div>
+                </div>
+                <p class="card-footer">Get more space...</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-yellow-500 p-3 rounded-full text-white">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Revenue</p>
+                        <p class="text-2xl font-bold">$34,245</p>
+                    </div>
+                </div>
+                <p class="card-footer">Last 24 Hours</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-blue-500 p-3 rounded-full text-white">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Fixed Issues</p>
+                        <p class="text-2xl font-bold">75</p>
+                    </div>
+                </div>
+                <p class="card-footer">Tracked from Github</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-pink-500 p-3 rounded-full text-white">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Followers</p>
+                        <p class="text-2xl font-bold">+245</p>
+                    </div>
+                </div>
+                <p class="card-footer">Just updated</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-green-500 p-3 rounded-full text-white">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Daily Sales</p>
+                        <p class="text-2xl font-bold">55% increase in today sales</p>
+                    </div>
+                </div>
+                <p class="card-footer">Updated 4 minutes ago</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-yellow-500 p-3 rounded-full text-white">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Email Subscriptions</p>
+                        <p class="text-2xl font-bold">Last Campaign Performance</p>
+                    </div>
+                </div>
+                <p class="card-footer">Campaign sent 2 days ago</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="bg-blue-500 p-3 rounded-full text-white">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-600">Completed Tasks</p>
+                        <p class="text-2xl font-bold">Last Campaign Performance</p>
+                    </div>
+                </div>
+                <p class="card-footer">Campaign event 2 days ago</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <div class="card tasks">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg mr-2">Tasks</button>
+                        <button class="bg-red-500 text-white px-4 py-2 rounded-lg mr-2">Bugs</button>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg mr-2">Website</button>
+                        <button class="bg-gray-500 text-white px-4 py-2 rounded-lg">Server</button>
+                    </div>
+                </div>
+                <ul>
+                    <li class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Sign contract for "What are conference organizers afraid of?"</span>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="text-green-500 mr-2"><i class="fas fa-check"></i></button>
+                            <button class="text-red-500"><i class="fas fa-times"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Lines From Great Russian Literature? Or E-mails From My Boss?</span>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="text-green-500 mr-2"><i class="fas fa-check"></i></button>
+                            <button class="text-red-500"><i class="fas fa-times"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Sign contract for "What are conference organizers afraid of?"</span>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="text-green-500 mr-2"><i class="fas fa-check"></i></button>
+                            <button class="text-red-500"><i class="fas fa-times"></i></button>
+                        </div>
+                    </li>
+                    <li class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-2">
+                            <span>Sign contract for "What are conference organizers afraid of?"</span>
+                        </div>
+                        <div class="flex items-center">
+                            <button class="text-green-500 mr-2"><i class="fas fa-check"></i></button>
+                            <button class="text-red-500"><i class="fas fa-times"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2 class="text-xl font-bold mb-4">Employees Stats</h2>
+                <p class="text-gray-500 mb-4">New employees on 19th September, 2019</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Salary</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Dakota Rice</td>
+                            <td>$36,738</td>
+                            <td>Niger</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>2019 - made with love</p>
+        </footer>
+    </div>
+</body>
+</html>

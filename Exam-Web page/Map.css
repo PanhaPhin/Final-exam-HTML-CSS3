@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: #e91e63;
+    color: white;
+}
+.sidebar a:hover {
+    background-color: #ddd;
+}
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+h1{
+    color: #333;
+    margin-bottom: 60 px ;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    filter: invert(0);
+}

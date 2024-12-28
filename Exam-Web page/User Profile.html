@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="UserProfile.css">
+
+  
+    
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="sidebar">
+        <div class="p-4 text-center text-xl font-bold">Company</div>
+        <nav class="mt-10">
+            <a href="Dashboard.html" >
+                <i class="fas fa-tachometer-alt mr-3"></i>
+                Dashboard
+            </a>
+            <a href="User Profile.html" class="active" >
+                <i class="fas fa-user mr-3"></i>
+                User Profile
+            </a>
+            <a href="Map.html">
+                <i class="fas fa-map-marker-alt mr-3"></i>
+                Maps
+            </a>
+            <a href="Notifications.html">
+                <i class="fas fa-bell mr-3"></i>
+                Notifications
+            </a>
+            <a href="Support.html">
+                <i class="fas fa-life-ring mr-3"></i>
+                Support
+            </a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1 class="text-2xl font-bold mb-6">User Profile</h1>
+        <div class="profile">
+            <section class="edit-profile">
+                <h2>Edit Profile</h2>
+                <p>Complete your profile</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Company">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Country">
+                        <input type="text" placeholder="Postal code">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="About me"></textarea>
+                    </div>
+                    <button type="submit" class="update-button">Update Profile</button>
+                </form>
+            </section>
+            <section class="profile-summary">
+                <div class="profile-picture">
+                    <img src="assets\images\avatar-jacob-thompson.webp"></div>
+                <h3>Alec Thompson</h3>
+                <p>CEO / Co-Founder</p>
+                <blockquote>
+                    "Don't be scared of the truth because we need to restart the human foundation in truth..."
+                </blockquote>
+            </section>
+        </div>
+    </main>
+</div>
+</body>
+</html>
